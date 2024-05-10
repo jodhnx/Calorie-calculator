@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalorienrechner Plus</title>
+    <link rel="stylesheet" href="KR.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kalorienrechner Plus</h1>
+        <div>
+            <label for="gewicht">Gewicht (in kg):</label>
+            <input type="number" id="gewicht" placeholder="Gewicht in kg">
+        </div>
+        <div>
+            <label for="aktivitaetsgrad">Aktivitätsgrad:</label>
+            <select id="aktivitaetsgrad">
+                <option value="1.2">Kaum aktiv (Sitzende Tätigkeit)</option>
+                <option value="1.375">Leicht aktiv (Leichte körperliche Arbeit/Sport 1-3 Tage/Woche)</option>
+                <option value="1.55">Mäßig aktiv (Moderate körperliche Arbeit/Sport 3-5 Tage/Woche)</option>
+                <option value="1.725">Sehr aktiv (Schwere körperliche Arbeit/Sport 6-7 Tage/Woche)</option>
+                <option value="1.9">Extrem aktiv (Sehr schwere körperliche Arbeit/Sport & physische Aktivität im Beruf)</option>
+            </select>
+        </div>
+        <button onclick="berechneKalorien()">Berechnen</button>
+        <div id="ergebnis"></div>
+        <div id="bmi"></div>
+    </div>
+    <script src="KR.js"></script>
+</body>
+</html>
